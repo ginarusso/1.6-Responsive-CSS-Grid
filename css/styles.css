@@ -1,0 +1,60 @@
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin: 0;
+}
+
+nav {
+    
+}
+
+.nav {
+    display: flex;
+    outline: 2px solid #f4f4f4;
+    /* position: fixed; */
+}
+
+/* .nav {
+    display: flex;
+    outline: 4px solid green;
+} */
+
+.align-right {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+img {
+    width: 50px;
+}
+
+h2 {
+    margin: 10px;
+    letter-spacing: -1px;
+}
+
+main {
+    height: 500px;
+    padding: 100px 20px 0 20px;
+}
+
+.form {
+    width: 400px;
+    margin: 0 auto;
+}
+
+button {
+    width: 400px;
+    padding: 10px;
+    background-color: rgb(10, 72, 204);
+    color: #fff;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    height: 300px;
+    padding: 100px;
+}
+
