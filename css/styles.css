@@ -136,6 +136,7 @@ button {
 
 button:hover {
     opacity: .8;
+    cursor: pointer;
 }
 
 .submit {
