@@ -216,3 +216,22 @@ i {
     cursor: pointer;
     opacity: .5;
 }
+
+@media (max-width: 600px) {
+    footer div {
+        justify-content: space-evenly;
+    }
+
+    footer p,
+    footer h3 {
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    .social p {
+        text-align: left;
+    }
+}
