@@ -6,6 +6,10 @@ body {
 nav {
     
 }
+a:hover {
+    opacity: .6;
+    cursor: pointer;
+}
 
 .nav {
     display: flex;
@@ -57,6 +61,7 @@ button {
     color: #fff;
     /* height: 300px; */
     padding: 60px 60px 20px;
+    width: 100%;
 }
 
 .footer div {
@@ -69,6 +74,34 @@ button {
 
 .social {
     background-color: #000;
-    padding: 0 0 20px 110px;
+    padding: 0 0 90px 110px;
 }
+
+.social p {
+    color: #fff;
+}
+
+hr {
+    margin-top: 20px;
+    width: 50px;
+}
+
+/* @media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer div {
+       /* outline: 1px solid white; */
+       /* width: 100px; */
+       /* margin: 0 auto;
+       padding: 0; */
+       /* justify-content: space-evenly;
+    } */
+/* 
+    .footer p {
+        font-size: 14px;
+    }
+
+} */ 
 
