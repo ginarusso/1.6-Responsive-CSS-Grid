@@ -1,34 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+
 body {
     font-family: 'Hanken Grotesk', sans-serif;
     margin: 0;
 }
 
+/* NAV */
+
 nav {
-    
-}
-a:hover {
-    opacity: .6;
-    cursor: pointer;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
 }
 
-.nav {
+.navbar {
     display: flex;
-    outline: 2px solid #f4f4f4;
-    /* position: fixed; */
+    border: 1px solid #f4f4f4;
 }
 
-/* .nav {
-    display: flex;
-    outline: 4px solid green;
-} */
-
-.align-right {
-    margin-left: auto;
+.logo {
+    width: 50px;
     margin-right: 10px;
 }
 
-img {
-    width: 50px;
+.logo:hover {
+    cursor: pointer;
+    opacity: .8;
 }
 
 h2 {
@@ -36,15 +37,74 @@ h2 {
     letter-spacing: -1px;
 }
 
-main {
-    height: 500px;
-    padding: 100px 20px 0 20px;
+.align-right {
+    margin-left: auto;
+    margin-right: 10px;
 }
+
+.align-right:hover,
+a:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+/* MAIN */
+
+main {
+    height: 600px;
+    padding: 100px 0px 0 0px;
+}
+
+/* FORM */
 
 .form {
     width: 400px;
     margin: 0 auto;
 }
+
+.form p {
+    text-align: center;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: underline;
+    color:rgb(10, 72, 204);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons {
+    width: 30px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.btn, input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F5F8F9;
+    border: none;
+    color: #000;
+    padding-right: 120px;
+    cursor: pointer;
+}
+
+input {
+    width: 400px;
+    padding: 20px;
+}
+
+/* SUBMIT BUTTON */
 
 button {
     width: 400px;
@@ -55,53 +115,78 @@ button {
     margin-top: 30px;
 }
 
+button:hover {
+    opacity: .8;
+}
+
+/* FOOTER */
+
 .footer {
     display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
     background-color: #000;
     color: #fff;
-    /* height: 300px; */
     padding: 60px 60px 20px;
-    width: 100%;
+    max-width: 100%;
 }
 
 .footer div {
-    padding: 50px 50px 0;
+    padding: 50px 55px 0 55px;
 }
 
 .footer p {
     font-size: 14px;
 }
 
+.footer p:hover {
+    opacity: .5;
+}
+
+/* SOCIAL  */
+
 .social {
     background-color: #000;
     padding: 0 0 90px 110px;
 }
 
-.social p {
+.social p, i {
     color: #fff;
 }
 
-hr {
-    margin-top: 20px;
-    width: 50px;
+.social p {
+    padding-top: 10px;
 }
 
-/* @media (max-width: 600px) {
-    .footer {
-        flex-direction: column;
-    }
+.social a {
+    color: #fff;
+    text-decoration: none;
+}
 
-    .footer div {
-       /* outline: 1px solid white; */
-       /* width: 100px; */
-       /* margin: 0 auto;
-       padding: 0; */
-       /* justify-content: space-evenly;
-    } */
-/* 
-    .footer p {
-        font-size: 14px;
-    }
+.social a:hover {
+    text-decoration: underline;
+    opacity: .5;
+}
 
-} */ 
+hr {
+    margin: 0 10px;
+    width: 100px;
+    color: #848884;
+    opacity: .3;
+} 
 
+/* FONT AWESOME ICONS */
+
+i {
+    padding-bottom: 30px;
+    margin: 0 10px 0 10px;
+}
+
+.fa-solid, .fa-angle-right {
+    margin-left: 10px;
+}
+
+.fa-angle-right:hover {
+    cursor: pointer;
+    opacity: .5;
+}

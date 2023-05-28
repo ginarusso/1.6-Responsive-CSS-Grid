@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DropBox</title>
+    <title>DropBox Mockup</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;600&display=swap" rel="stylesheet">
@@ -12,20 +12,28 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <nav>
-        <div class="nav">
-            <img src="images/dropbox.png" alt="Dropbox logo">
-            <h2>Dropbox</h2>
-            <p class="align-right">Sign Up</p>
-        </div>
-    </nav>
+    <header>
+        <nav>
+            <div class="navbar">
+                <img class="logo" src="images/dropbox.png" alt="Dropbox logo">
+                <h2>Dropbox</h2>
+                <p class="align-right">Sign Up</p>
+            </div>
+        </nav>
+    </header>
     <main class="form">
+        <div class="flex">
+            <h3>Login</h3>
+            <a href="#">or create an account</a>
+        </div>
         <form>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis harum atque eaque aspernatur officia fuga, praesentium ipsam quam saepe? Reiciendis veniam, illo magni at ullam illum sed voluptates itaque dolorem!
+           <button class="btn"><img class="icons" src="images/google-logo.png" alt="Google logo">Continue with Google</button>
+           <button class="btn"><img class="icons" src="images/apple-logo.png" alt="Apple logo">Continue with Apple</button>
+            <p>or</p>
+            <label for="other-email">Email</label>
+            <input class="email" type="email" name="other" id="other-email">
         </form>
-        <hr>
-        <button>Continue
-        </button>
+        <button type="button">Continue</button>
     </main>
     <footer>
         <div class="footer">
@@ -80,14 +88,13 @@
             </div>
         </div>
         <div class="social">
-            <a href="http://www.twitter.com/Dropbox" target="_blank"><i class="fa-brands fa-twitter" style="color: #ffffff; padding-right: 10px;"></i></a>
-            <a href="http://www.facebook.com/Dropbox" target="_blank"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+            <a href="http://www.twitter.com/Dropbox" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="http://www.facebook.com/Dropbox" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="http://www.youtube.com/user/dropbox" target="_blank">
+            <i class="fa-brands fa-youtube"></i></a>
             <hr>
-            <p>English (United States) <i class="fa-solid fa-angle-right" style="color: #ffffff; padding-left: 10px;"></i></p>
-        </div>
-     
-
-       
+            <p><a href="#"><i class="fa-solid fa-globe"></i>English (United States)<i class="fa-solid fa-angle-right"></i></a></p>
+        </div> 
     </footer>
 </body>
 </html>
