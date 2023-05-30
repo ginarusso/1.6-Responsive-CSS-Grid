@@ -223,15 +223,22 @@ i {
     }
 
     footer p,
-    footer h3 {
+    footer h3,
+    footer i {
         text-align: center;
     }
 
     footer p {
         font-size: 12px;
+    }  
+
+    .social {
+        padding: 0;
+        text-align: center;
     }
 
-    .social p {
-        text-align: left;
+    .social-hr {
+        margin: 0 auto;
     }
+   
 }
