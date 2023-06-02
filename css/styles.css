@@ -148,21 +148,21 @@ button:hover {
 /* FOOTER */
 
 .footer {
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: center; */
     background-color: #000;
     color: #fff;
-    padding: 20px 60px 20px;
+    /* padding: 20px 60px 20px; */
     max-width: 100%;
 }
 
 .footer div {
-    padding: 50px 55px 0 55px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding: 50px 55px 10px 55px;
 }
 
 .footer p {
     font-size: 14px;
+    margin: 10px 0;
 }
 
 .footer p:hover {
@@ -220,18 +220,22 @@ i {
 }
 
 @media (max-width: 600px) {
-    footer div {
+    /* footer div {
         justify-content: space-evenly;
+    } */
+
+    .footer h3 {
+        font-size: 20px;
     }
 
-    footer p,
-    footer h3,
-    footer i {
+    .footer p,
+    .footer h3,
+    .footer i {
         text-align: center;
     }
 
-    footer p {
-        font-size: 12px;
+    .footer p {
+        font-size: 16px;
     }  
 
     .social {
